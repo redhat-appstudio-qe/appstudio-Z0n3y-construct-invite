@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-tarn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-service-tenant/appstudio/dc-metro-map-tarn@sha256:fc1f19b39e8b17ff1be421f4156e9b06d3249a92658f83faec7d61f8f15a3dfa
+        name: my-nodejs
+        resources: {}
+status: {}
